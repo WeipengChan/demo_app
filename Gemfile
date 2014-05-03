@@ -2,14 +2,25 @@ source 'https://rubygems.org'
 ruby '2.0.0'
 
 gem 'rails', '4.1.0'
-
+gem 'pg', '0.15.1'
 group :development do
-  gem 'sqlite3', '1.3.8'
+  
 end
 group :development, :test do
-  gem 'rspec-rails', '2.13.1'
+  gem 'rspec-rails'
   gem "minitest"
   gem 'capybara'
+  gem 'selenium-webdriver', '2.35.1'
+  
+  #test
+  gem 'spork-rails'
+   gem 'guard-rspec', '2.5.0'
+   gem 'growl', '1.0.3'
+end
+
+group  :test do
+	gem 'sqlite3', '1.3.8'
+
 end
 
 gem 'sass-rails', '4.0.1'
@@ -23,9 +34,9 @@ group :doc do
   gem 'sdoc', '0.3.20', require: false
 end
 
-group :production do
-  gem 'pg', '0.15.1'
-end
+# group :production do
+#   gem 'pg', '0.15.1'
+# end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
