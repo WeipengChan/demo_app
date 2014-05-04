@@ -23,11 +23,13 @@ group  :test do
 
 end
 
-gem 'sass-rails', '4.0.1'
+gem 'sass','~> 3.2.0'
+gem 'sass-rails','4.0.3'
+gem 'bootstrap-sass'
 gem 'uglifier', '2.1.1'
 gem 'coffee-rails', '4.0.1'
 gem 'jquery-rails', '2.2.1'
-gem 'turbolinks', '1.1.1'
+gem 'turbolinks'
 gem 'jbuilder', '1.0.2'
 
 group :doc do
